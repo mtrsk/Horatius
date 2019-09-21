@@ -1,3 +1,4 @@
+# Dotnet Core
 obj
 bin
 *.bak
@@ -6,3 +7,12 @@ bin
 packages
 paket-files
 *.dll
+
+# Nix
+.envrc
+.direnv
+result
+
+# IDE related
+.vscode
+.ionide
