@@ -10,6 +10,5 @@
      For the ashes of his fathers,
           And the temples of his gods,
 ```
-
-[Lays of Ancient Rome - Horatious, XXVII.](https://en.wikisource.org/wiki/Lays_of_Ancient_Rome)
+[Lays of Ancient Rome - Horatius, XXVII.](https://en.wikisource.org/wiki/Lays_of_Ancient_Rome)
 
