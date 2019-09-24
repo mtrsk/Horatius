@@ -1,6 +1,6 @@
 # Horatius
 
-![](https://github.com/mtrsk/Horatius/workflows/.github/workflows/dockerimage.yml/badge.svg)
+![](https://github.com/mtrsk/Horatius/.github/workflows/dockerimage.yml/badge.svg)
 
 ```
      Then out spake brave Horatius,
