@@ -1,4 +1,4 @@
-{ pkgs ? import ./pinned-nixpkgs.nix {}
+{ pkgs ? import ./nix/pinned-nixpkgs.nix {}
 , lib ? pkgs.stdenv.lib
 }:
 
