@@ -1,0 +1,25 @@
+# Dotnet Core
+**/bin
+**/obj
+**/.vscode
+**/.vs
+*.bak
+.vs
+.fake
+packages
+paket-files
+*.dll
+.nuget
+
+# Nix
+.envrc
+.direnv
+result
+*.nix
+
+# IDE related
+.ionide
+
+# Extra
+*.md
+.gitignore

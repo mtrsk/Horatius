@@ -30,18 +30,22 @@ module FileGeneratorView =
     | GenerateVDFile
     | VerifyFile
 
+    // Directory containing the enrollments text files
+    [<Literal>]
+    let dir = "../../files"
+
     // The update function computes the next state of the application based on the current state and the incoming messages
     let update (msg: Msg) (state: ListState) : ListState =
         match msg with
         | GenerateVDFile ->
-            let path = "matriculasSemDV.txt"
+            let path = Path.Combine(dir, "matriculasSemDV.txt")
             { filepath = path
               list = (File.ReadLines path)
                 |> Validation.verificationStream
                 |> Seq.toList
             }
         | VerifyFile     ->
-            let path = "matriculasParaVerificar.txt"
+            let path = Path.Combine(dir, "matriculasParaVerificar.txt")
             { filepath = path
               list = (File.ReadLines path)
                 |> Validation.checkStream

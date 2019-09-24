@@ -1,6 +1,7 @@
 # Horatius
 
-![](https://github.com/mtrsk/Horatius/.github/workflows/dockerimage.yml/badge.svg)
+[![Build Status](https://travis-ci.org/mtrsk/Horatius.svg?branch=master)](https://travis-ci.org/mtrsk/Horatius)
+![](https://github.com/mtrsk/Horatius/master/.github/workflows/dockerimage.yml/badge.svg)
 
 ```
      Then out spake brave Horatius,
@@ -32,7 +33,7 @@
     │   ├── App.fsproj
     │   ├── AppView.fs
     │   ├── Lib.fs
-    │   ├── Main.fs
+    │   └── Main.fs
     ├── CLI
     │   ├── CLI.fsproj
     │   └── Program.fs

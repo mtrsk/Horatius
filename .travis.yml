@@ -1,0 +1,12 @@
+language: fsharp
+
+dotnet: 2.2.401
+sudo: false
+
+env:
+  global:
+    - DOTNET_CLI_TELEMETRY_OPTOUT: 1
+
+script:
+  - make build
+  - make test
