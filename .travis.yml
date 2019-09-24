@@ -1,8 +1,6 @@
 language: nix
-before_install: nix-shell
 script:
-  - make build
-  - make test
+  - nix-shell --command 'make build; make test'
 cache:
   directories:
   - $HOME/nix.store
