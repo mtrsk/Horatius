@@ -13,7 +13,7 @@ type MainWindow() =
     inherit HostWindow()
 
     do
-        base.Title <- "Avalonia.FuncUI Counter Elmish template"
+        base.Title <- "Enrollment File Generator"
         ()
 
 type App() =
@@ -41,7 +41,7 @@ module Program =
         let mainWindow = MainWindow()
 
         //Create an elmish MVU program using an initial model, update function and view
-        Elmish.Program.mkSimple (fun () -> CounterView.initialState) CounterView.update CounterView.view
+        Elmish.Program.mkSimple (fun () -> FileGeneratorView.initialState) FileGeneratorView.update FileGeneratorView.view
         |> Program.withHost mainWindow
         |> Program.withConsoleTrace
         |> Program.run
@@ -55,12 +55,5 @@ module Program =
     [<EntryPoint>]
     [<CompiledName "Main">]
     let main(args: string[]) =
-        //buildAvaloniaApp().Start(appMain, args)
-
-        let filepath1 = "matriculasSemDV.txt"
-        Validation.writeVDFile filepath1
-
-        let filepath2 = "matriculasParaVerificar.txt"
-        Validation.writeVerifiedFile filepath2
-
+        buildAvaloniaApp().Start(appMain, args)
         0
