@@ -1,6 +1,6 @@
 # Horatius
 
-[![Actions Status](https://github.com/mtrsk/Horatius/workflows/dockerimage.yml/badge.svg)](https://github.com/mtrsk/Horatius/actions)
+![](https://github.com/mtrsk/Horatius/workflows/.github/workflows/dockerimage.yml/badge.svg)
 
 ```
      Then out spake brave Horatius,
@@ -18,6 +18,9 @@
 
 ```
 ├── Dockerfile
+├── files
+│   ├── matriculasSemDV.txt
+│   └── matriculasParaVerificar.txt
 ├── Horatius.sln
 ├── nix
 │   ├── .nixpkgs-version.json
