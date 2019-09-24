@@ -17,3 +17,6 @@ result
 # IDE related
 .vscode
 .ionide
+
+# txts
+*.txt

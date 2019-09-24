@@ -1,5 +1,7 @@
 # Horatius
 
+[![Actions Status](https://github.com/mtrsk/Horatius/workflows/dockerimage.yml/badge.svg)](https://github.com/mtrsk/Horatius/actions)
+
 ```
      Then out spake brave Horatius,
           The Captain of the Gate:
@@ -18,6 +20,7 @@
 ├── Dockerfile
 ├── Horatius.sln
 ├── nix
+│   ├── .nixpkgs-version.json
 │   └── pinned-nixpkgs.nix
 ├── README.md
 ├── shell.nix
@@ -27,12 +30,8 @@
     │   ├── AppView.fs
     │   ├── Lib.fs
     │   ├── Main.fs
-    │   ├── matriculasParaVerificar.txt
-    │   ├── matriculasSemDV.txt
     ├── CLI
     │   ├── CLI.fsproj
-    │   ├── matriculasParaVerificar.txt
-    │   ├── matriculasSemDV.txt
     │   └── Program.fs
     ├── Verification
     │   ├── Library.fs
