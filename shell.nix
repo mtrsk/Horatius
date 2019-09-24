@@ -6,6 +6,7 @@ pkgs.stdenv.mkDerivation rec {
   name = "dev-shell";
 
   buildInputs = with pkgs; [
+    dotnet-sdk
     fontconfig
     mono6
     xorg.libX11
