@@ -49,7 +49,40 @@
 ### Source Code
 
 * Verification: A classlib which implements the main components of the project.
-* Verification.Test: Runs XUnit testes and property based tests (with `FsCheck`).
-* CLI: A console application that runs the `Verification` lib on the given files.
-* App: The GUI Application.
+* Verification.Test: Runs XUnit tests for the `Verification` classlib.
+* CLI: A console application that runs the `Verification` on both the `matriculasSemDV.txt` and `matriculasParaVerificar.txt`.
+* App: The GUI Application, mostly boilerplate. Created with the [AvaloniaUI](https://github.com/AvaloniaUI/Avalonia) and [it's wrapper](https://github.com/JaggerJo/Avalonia.FuncUI) for Elm-like MVU GUIs in F#.
 
+#### Running the project
+
+* Tests
+    ```sh
+    $ cd src/Verification.Tests
+    $ dotnet test
+    ```
+
+* CLI
+    ```sh
+    $ cd src/CLI
+    $ dotnet build
+    $ dotnet run
+    USAGE: horatius [--help] [--all]
+
+    OPTIONS:
+
+        --all                 Parses both files and creates new ones.
+        --help                display this list of options.
+    $ dotnet run --all
+    Loading File: ../../files/matriculasSemDV.txt
+    File written in the current directory
+    Loading File: ../../files/matriculasParaVerificar.txt
+    File written in the current directory
+    ```
+
+* GUI
+    ```sh
+    $ cd src/App
+    $ dotnet build
+    $ dotnet run
+    ```
+<img src="gui.png" alt="GUI" style="display: block; margin: 0 auto" />
