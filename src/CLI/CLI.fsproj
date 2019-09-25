@@ -13,4 +13,8 @@
     <ProjectReference Include="..\Verification\Verification.fsproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Argu" Version="5.5.0" />
+  </ItemGroup>
+
 </Project>
